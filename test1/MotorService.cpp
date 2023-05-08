@@ -9,7 +9,7 @@ void Motor::init_motor(void) {
 }
 
 void Motor::controls(bool direction_A, float speed_A, bool direction_B,
-                      float speed_B, bool enable_controls) {
+                     float speed_B, bool enable_controls) {
   if (enable_controls == enable_control) {
     digitalWrite(PIN_Motor_STBY, HIGH);
     // A - Direita
