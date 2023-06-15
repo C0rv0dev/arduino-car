@@ -46,7 +46,7 @@ static void AppFunctionSet_Controls(Controls direction, int func_speed) {
     Motor.controls(move_backward, speed, move_backward, speed, enable_control);
     break;
   case RightForward:
-    Motor.controls(move_forward, speed, move_forward, speed, enable_control);
+    Motor.controls(move_forward, speed / 2, move_forward, speed, enable_control);
     break;
   case RightBackward:
     Motor.controls(move_backward, speed, move_backward, speed, enable_control);
